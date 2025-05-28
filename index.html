@@ -1,278 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For the Country That Never Loved Him Back</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Sans+Pro:wght@300;400;600&display=swap');
-        
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Source Sans Pro', sans-serif;
-            background: #000;
-            overflow-x: auto;
-        }
-        
-        .container {
-            position: relative;
-            width: 1080px;
-            height: 1350px;
-            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.8)), 
-                        url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAyAEIDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP//Z');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 60px 50px;
-            box-sizing: border-box;
-            margin: 0 auto;
-        }
-        
-        .title {
-            font-family: 'Playfair Display', serif;
-            font-size: 32px;
-            font-weight: 600;
-            text-align: center;
-            margin-bottom: 40px;
-            color: #ffffff;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-            line-height: 1.2;
-        }
-        
-        .poem-content {
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 18px;
-            line-height: 1.6;
-            color: #f5f5f5;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.9);
-            margin-bottom: 40px;
-            text-align: left;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .poem-content p {
-            margin-bottom: 20px;
-        }
-        
-        .stanza {
-            margin-bottom: 25px;
-        }
-        
-        .emphasis {
-            font-style: italic;
-            color: #E8D5B7;
-        }
-        
-        .name-highlight {
-            font-weight: 600;
-            color: #D4AF37;
-            font-size: 20px;
-        }
-        
-        .footnote {
-            border-top: 2px solid #D4AF37;
-            padding-top: 20px;
-            margin-top: 30px;
-            font-style: italic;
-            color: #E8D5B7;
-        }
-        
-        .attribution {
-            font-family: 'Playfair Display', serif;
-            font-size: 24px;
-            font-style: italic;
-            text-align: right;
-            color: #D4AF37;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
-            margin-top: 30px;
-        }
-        
-        .download-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #D4AF37;
-            color: #000;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: 600;
-            z-index: 1000;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-        }
-        
-        @media (max-width: 1100px) {
-            .container {
-                width: 100vw;
-                padding: 40px 30px;
-            }
-            
-            .title {
-                font-size: 36px;
-            }
-            
-            .poem-content {
-                font-size: 16px;
-            }
-            
-            .attribution {
-                font-size: 20px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For the Country That Never Loved Him Back</title>
+
+  <!-- Open Graph Metadata for Facebook -->
+  <meta property="og:title" content="For the Country That Never Loved Him Back" />
+  <meta property="og:description" content="A powerful poetic tribute to Leonard Matlovich and every queer soul erased by a country that demanded silence. Read the full piece here." />
+  <meta property="og:image" content="https://katsedev.github.io/Poems/image.jpg" />
+  <meta property="og:url" content="https://katsedev.github.io/Poems/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Queer Legacy Archive" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fallback SEO Description -->
+  <meta name="description" content="A poetic tribute to Leonard Matlovich and those who defied silence." />
+
+  <!-- Style -->
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: 'Georgia', serif;
+      background-color: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 0;
+      font-weight: normal;
+      color: #666;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+    }
+
+    .footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #888;
+      border-top: 1px solid #ddd;
+      padding-top: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <button class="download-btn" onclick="downloadImage()">Download Image</button>
-    
-    <div class="container" id="poem-container">
-        <div class="title">"For the Country That Never Loved Him Back"</div>
-        
-        <div class="poem-content">
-            <div class="stanza">
-                They gave him a folded flag,<br>
-                not for who he kissed—<br>
-                but for how many he killed.<br>
-                He may have kissed just one,<br>
-                but it was the wrong war.
-            </div>
-            
-            <div class="stanza">
-                They say heroes die once.<br>
-                But some men—<br>
-                <span class="emphasis">some men die twice.</span><br>
-                Once for their country...<br>
-                and once when it spits them out<br>
-                like a tooth knocked loose<br>
-                in a bar fight called history.
-            </div>
-            
-            <div class="stanza">
-                <span class="name-highlight">Leonard Matlovich.</span><br>
-                Not a martyr.<br>
-                Not a mistake.<br>
-                A man.
-            </div>
-            
-            <div class="stanza">
-                Who wore his heart like a grenade—<br>
-                pulled the pin,<br>
-                and waited to see<br>
-                if America would flinch.
-            </div>
-            
-            <div class="stanza">
-                They stitched his wounds,<br>
-                but not their shame.<br>
-                They pinned medals over silence,<br>
-                discharged him<br>
-                for a kiss that dared to exist<br>
-                in daylight.
-            </div>
-            
-            <div class="stanza">
-                He didn't die in Vietnam.<br>
-                He died in the denial<br>
-                that his love<br>
-                was worth less than his trigger finger.
-            </div>
-            
-            <div class="stanza">
-                And still—<br>
-                he stood.<br>
-                Back straight,<br>
-                voice steady,<br>
-                with the truth strapped across his chest<br>
-                like a sash of defiance.
-            </div>
-            
-            <div class="stanza">
-                He may have walked among the ghosts<br>
-                with a silence he'd sharpened into armor.<br>
-                But he wasn't quiet.<br>
-                No, Leonard never marched alone.<br>
-                Not really.
-            </div>
-            
-            <div class="stanza">
-                Because every queer kid<br>
-                staring at that stone<br>
-                wondering if it's worth it—<br>
-                whether to serve, to forgive,<br>
-                to hope—<br>
-                <span class="emphasis">is walking with him.</span>
-            </div>
-            
-            <div class="footnote">
-                <strong>Footnote to the Universe:</strong><br>
-                Let no nation expect me<br>
-                to die for its dreams<br>
-                until it proves it won't kill mine.<br>
-                Give me a country<br>
-                that tattoos freedom onto the inside of its ribcage<br>
-                before it asks for blood.
-            </div>
-        </div>
-        
-        <div class="attribution">—Mokhosi Katse</div>
-    </div>
+  <h1>For the Country That Never Loved Him Back</h1>
+  <h2>In Memory of Leonard Matlovich</h2>
 
-    <script>
-        // Load the uploaded gravestone image as background
-        window.addEventListener('load', function() {
-            const container = document.getElementById('poem-container');
-            // Set the gravestone image as background - you'll need to upload this through the file system
-            // For now, using a cemetery/memorial themed background
-            container.style.backgroundImage = `
-                linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.8)),
-                url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1080&h=1350&fit=crop&crop=center')
-            `;
-        });
-        
-        function downloadImage() {
-            // Create a canvas to render the content
-            const container = document.getElementById('poem-container');
-            
-            // Use html2canvas library for better image generation
-            // For now, we'll provide instructions to the user
-            alert('To download this image:\n\n1. Right-click on the image\n2. Select "Save image as..." or "Save picture as..."\n3. Choose your desired location and filename\n\nAlternatively, you can take a screenshot of this content.');
-        }
-        
-        // Add html2canvas for proper image download functionality
-        const script = document.createElement('script');
-        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js';
-        script.onload = function() {
-            window.downloadImage = function() {
-                const container = document.getElementById('poem-container');
-                const downloadBtn = document.querySelector('.download-btn');
-                
-                // Hide download button temporarily
-                downloadBtn.style.display = 'none';
-                
-                html2canvas(container, {
-                    backgroundColor: null,
-                    scale: 2,
-                    useCORS: true,
-                    allowTaint: true
-                }).then(canvas => {
-                    // Show download button again
-                    downloadBtn.style.display = 'block';
-                    
-                    // Create download link
-                    const link = document.createElement('a');
-                    link.download = 'for-the-country-that-never-loved-him-back.png';
-                    link.href = canvas.toDataURL();
-                    link.click();
-                });
-            };
-        };
-        document.head.appendChild(script);
-    </script>
+  <p>They etched his name on a grave without rights,</p>
+  <p>"When I was in the military, they gave me a medal for killing two men and a discharge for loving one."</p>
+  <p>In silence, he served a nation that feared his truth,</p>
+  <p>Wearing boots heavy with the weight of a double life.</p>
+
+  <p>Each salute became a whisper,</p>
+  <p>A hope that maybe love and duty could share a uniform.</p>
+
+  <p>But the flag that draped his coffin did not know his name,</p>
+  <p>Only the shame it assigned him for who he loved.</p>
+
+  <p>He stood—open, unashamed—</p>
+  <p>And was buried by the same country that asked for silence again.</p>
+
+  <p>Today, we unearth him with every truth we dare to speak,</p>
+  <p>In TikToks, in protests, in drag shows defiant and divine.</p>
+
+  <p>He walks with us—</p>
+  <p>In ballrooms turned battlegrounds,</p>
+  <p>In love letters mailed from barracks, unopened, returned.</p>
+
+  <p>This country may never have loved him back,</p>
+  <p>But we will. Over and over again,</p>
+  <p>With every queer breath, every uncloseted morning,</p>
+  <p>We will remember Leonard, not just in mourning—</p>
+  <p>But in the living.</p>
+
+  <div class="footer">
+    © 2025 Queer Legacy Archive · Written by [Your Name or Handle]
+  </div>
 </body>
 </html>
